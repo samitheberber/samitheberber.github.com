@@ -10,8 +10,10 @@ var test_content = $('<div />').append(
 
   var app = $.sammy('#main', function() {
 
+    this.use('Template', 'tpl');
+
     this.get('#/', function(context) {
-      this.swap(home_content);
+      this.partial('templates/home.tpl');
     });
 
     this.get('#/test', function(context) {
