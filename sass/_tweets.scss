@@ -1,0 +1,36 @@
+#tweets {
+    float: right;
+    width: 47%;
+    h2 {
+        text-align: center;
+    }
+    h2:before, h2:after {
+        content: "~";
+    }
+    .tweet {
+        border: thin solid black;
+        margin: 1em;
+        padding: 0;
+        a {
+            display: block;
+            padding: 0.5em;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            > * {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+        a:hover {
+            background-color: #eee;
+        }
+        span:first-child {
+            font-weight: bold;
+        }
+        span + span {
+            text-align: right;
+            font-style: italic;
+        }
+    }
+}

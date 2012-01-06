@@ -1,0 +1,83 @@
+@import "compass/reset";
+
+@import "_tweets";
+@import "_blogentries";
+@import "_repos";
+
+#frame {
+    #header {
+        padding: 2em;
+        text-align: center;
+    }
+    #menu {
+        border-bottom: thin dashed black;
+        ul {
+            text-align: center;
+            li {
+                display: inline;
+                padding: 1em;
+                a {
+                    border: thin dashed #ccc;
+                    padding: 0.5em;
+                    background-color: #eee;
+                    color: #333;
+                    text-decoration: none;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+                a:hover {
+                    background-color: #ccc;
+                    border: thin dashed #eee;
+                }
+            }
+        }
+    }
+    #content-frame {
+        background-color: #eee;
+        #content {
+            background-color: #ccc;
+            border: {
+                left: thin dashed black;
+                right: thin dashed black;
+            }
+            padding: 2em;
+            width: 90%;
+            max-width: 800px;
+            margin: {
+                left: auto;
+                right: auto;
+                top: 0;
+                bottom: 0;
+            }
+        }
+    }
+    #footer {
+        border-top: thin dashed black;
+        padding: 1em;
+        text-align: center;
+        color: black;
+        cursor: default;
+        font: {
+            size: 80%;
+            weight: bold;
+            variant: small-caps;
+        }
+    }
+}
+
+.clearer {
+    clear: both;
+}
+
+h1 {
+    font-size: 160%;
+}
+
+h2 {
+    font-size: 140%;
+    margin: {
+        top: 0.5em;
+        bottom: 0.5em;
+    }
+} 

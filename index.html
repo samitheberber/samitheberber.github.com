@@ -6,16 +6,29 @@
     <script type="text/javascript" charset="utf-8" src="javascripts/sammy.js"></script>
     <script type="text/javascript" charset="utf-8" src="javascripts/sammy.template.js"></script>
     <script type="text/javascript" charset="utf-8" src="javascripts/samisaada.js"></script>
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
   </head>
   <body>
-    <div>
-      <h1>Welcome to Sami's website</h1>
-      <p>Old site is deprecated and new is on its way. Old site is now located in <a href="http://legacy.samisaada.com">legacy.samisaada.com</a>.</p>
+    <div id="frame">
+      <div id="header">
+        <h1>Sami Saada</h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/about">About</a></li>
+        </ul>
+      </div>
+      <div id="content-frame">
+        <div id="content"></div>
+      </div>
+      <div id="footer">
+        <p>Copyright &copy; <?php echo date("Y"); ?> Sami Saada</p>
+      </div>
     </div>
-    <ul>
-      <li><a href="#/">Home</a></li>
-      <li><a href="#/test">Test</a></li>
-    </ul>
-    <div id="main"></div>
   </body>
 </html>
