@@ -1,1 +1,82 @@
 @import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+@import "compass/css3/opacity";
+
+@include sticky-footer(72px, "#wrapper", "#wrapper_footer", "footer");
+
+body {
+  background-color: #F8F2E5;
+  color: #9A9A9B;
+}
+
+a {
+  color: #D75A20;
+}
+
+header {
+  text-align: center;
+  background-color: #1B619B;
+  color: #ACCBE0;
+
+  h1 {
+    font-size: 200%;
+    padding: 1em;
+  }
+
+}
+
+#content_wrapper {
+
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 160%;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+
+  section {
+    margin: 2em;
+  }
+
+}
+
+footer {
+  text-align: center;
+
+  p {
+    padding-top: 2em;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 80%;
+  }
+
+}
+
+#services {
+
+  li {
+    display: inline;
+    overflow: auto;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+
+        img {
+          @include opacity(0.6);
+        }
+
+      }
+
+    }
+
+  }
+
+}
